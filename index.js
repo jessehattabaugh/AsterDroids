@@ -1,2 +1,1 @@
-var voxelEngine = require('voxel-engine');
-var game = voxelEngine();
+var game = require('voxel-engine')().appendToContainer(document.body);
