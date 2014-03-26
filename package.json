@@ -23,6 +23,10 @@
   },
   "devDependencies": {
     "browserify": "~3.33.0",
-    "voxel-engine": "~0.20.1"
+    "voxel-engine": "~0.20.1",
+    "watchify": "~0.6.3"
+  },
+  "dependencies": {
+    "express": "~3.5.1"
   }
 }
