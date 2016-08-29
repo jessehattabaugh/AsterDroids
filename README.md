@@ -1,4 +1,4 @@
-AsterDroids
+🚀🤖 AsterDroids
 ===========
 
 A game about mining on asteroids with robots
