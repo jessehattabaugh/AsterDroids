@@ -1,0 +1,13 @@
+{
+	"compilerOptions": {
+		"checkJs": true,
+		"lib": ["webworker", "dom", "esnext"],
+		"module": "esnext",
+		"moduleResolution": "node",
+		"noImplicitAny": true,
+		"target": "esnext",
+		"typeRoots": ["./node_modules/@types", "./types"]
+	},
+	"exclude": ["node_modules"],
+	"include": ["./types.d.ts", "./types/**/*.d.ts", "./www/**/*.js"]
+}

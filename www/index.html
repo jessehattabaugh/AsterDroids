@@ -1,9 +1,110 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-         <title>AsterDroids</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AsterDroids</title>
+        <style>
+            :root {
+                --color-space: #0a0e17;
+                --color-space-lighter: #1a2030;
+                --color-text-primary: #e6e6ff;
+                --color-text-secondary: #a6c8ff;
+                --color-warning: #ffa500;
+                --color-success: #42b883;
+                --color-error: #ff4757;
+                --color-metal: #8f9194;
+                --color-rare-mineral: #7b68ee;
+                --color-ice: #a5f2f3;
+                --shadow-panel: 0 0 10px rgba(80, 140, 255, 0.2);
+                --glow-blue: 0 0 15px rgba(30, 144, 255, 0.6);
+                --glow-green: 0 0 15px rgba(66, 184, 131, 0.6);
+            }
+
+            body {
+                background-color: var(--color-space);
+                color: var(--color-text-primary);
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                min-height: 100vh;
+                overflow: hidden;
+            }
+
+            .stars {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+            }
+
+            .game-container {
+                text-align: center;
+                padding: 2rem;
+                background-color: var(--color-space-lighter);
+                border-radius: 1rem;
+                box-shadow: var(--shadow-panel);
+                max-width: 800px;
+                width: 90%;
+            }
+
+            h1 {
+                margin-top: 0;
+                font-size: 3rem;
+                color: var(--color-text-primary);
+                text-shadow: var(--glow-blue);
+            }
+
+            p {
+                font-size: 1.2rem;
+                line-height: 1.6;
+                color: var(--color-text-secondary);
+                margin-bottom: 2rem;
+            }
+
+            .start-button {
+                background: linear-gradient(to right, #3498db, #2980b9);
+                border: none;
+                border-radius: 4px;
+                color: white;
+                cursor: pointer;
+                font-size: 1.2rem;
+                padding: 0.8rem 2rem;
+                transition: all 0.3s ease;
+                box-shadow: var(--glow-blue);
+            }
+
+            .start-button:hover {
+                transform: scale(1.05);
+                box-shadow: var(--glow-green);
+            }
+
+            .asteroid-image {
+                max-width: 100%;
+                height: auto;
+                margin: 1rem 0;
+            }
+        </style>
     </head>
     <body>
-        <script src="index.js"></script>
+        <div class="stars" id="stars-canvas"></div>
+
+        <div class="game-container">
+            <h1>AsterDroids</h1>
+            <p>
+                Pilot your robotic mining drones across procedurally generated asteroids.
+                Extract valuable resources, build automated mining operations, and propel
+                resource-rich asteroids back to base for profit!
+            </p>
+            <button class="start-button" aria-label="Start Game">Launch Mission</button>
+        </div>
+
+        <script type="module" src="index.js"></script>
     </body>
 </html>

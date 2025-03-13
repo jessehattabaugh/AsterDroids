@@ -1,32 +1,10 @@
 {
-  "name": "AsterDroids",
-  "version": "0.0.0",
-  "description": "a voxel game about mining asteroids with robots",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Not an Error: no test specified\" && exit 1",
-    "build-js": "browserify index.js -o www/index.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/jessehattabaugh/AsterDroids.git"
-  },
-  "keywords": [
-    "game",
-    "voxel",
-    "webgl"
-  ],
-  "author": "Jesse Hattabaugh",
-  "license": "GPL",
-  "bugs": {
-    "url": "https://github.com/jessehattabaugh/AsterDroids/issues"
+	"start": "",
+    "test": "",
+    "build": ""
   },
   "devDependencies": {
-    "browserify": "~3.33.0",
-    "voxel-engine": "~0.20.1",
-    "watchify": "~0.6.3"
-  },
-  "dependencies": {
-    "express": "~3.5.1"
+	
   }
 }

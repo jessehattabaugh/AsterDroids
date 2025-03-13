@@ -1,1 +1,0 @@
-var game = require('voxel-engine')().appendToContainer(document.body);

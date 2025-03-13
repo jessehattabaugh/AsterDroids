@@ -1,0 +1,47 @@
+{
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": "always"
+	},
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.formatOnSave": true,
+	"github.copilot.chat.codeGeneration.instructions": [
+		{
+			"file": "ARCHITECTURE.md"
+		}
+	],
+	"github.copilot.chat.testGeneration.instructions": [
+		{
+			"file": "TESTING.md"
+		}
+	],
+	"github.copilot.chat.reviewSelection.instructions": [
+		{
+			"file": "STYLE_GUIDE.md"
+		}
+	],
+	"github.copilot.chat.reviewSelection.enabled": true,
+	"github.copilot.chat.codeGeneration.useInstructionFiles": true,
+	"github.copilot.chat.codesearch.enabled": true,
+	"github.copilot.chat.commitMessageGeneration.instructions": [
+		{
+			"text": "Ensure that these changes adhere to #file:ARCHITECTURE.md, #file:STYLE_GUIDE.md and #file:TESTING.md and if functionality is added or removed be sure to update #file:CHANGELOG.md and #file:ROADMAP.md."
+		}
+	],
+	"github.copilot.advanced": {
+		"commitMessageGeneration": {
+			"enabled": true
+		},
+		"codeGeneration": {
+			"enabled": true
+		},
+		"testGeneration": {
+			"enabled": true
+		},
+		"reviewSelection": {
+			"enabled": true
+		},
+		"codesearch": {
+			"enabled": true
+		}
+	}
+}
